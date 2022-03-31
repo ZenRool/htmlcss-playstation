@@ -1,7 +1,30 @@
+:root {
+    --ms-link-blue: #0170d1;
+    --ms-btn-orange: #cc3d10;
+}
 /* utility */
 img {
     width: 100%;
 }
+h2 {
+    font-size: 40px;
+}
+.big-vgame {
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    left: 50%;
+    padding: 0 0 3rem 1rem;
+
+
+ 
+}
+
 .ms_btn-dark {
     background-color: #363636;
     color: white;
@@ -10,19 +33,30 @@ img {
     background-color: #505050;
     color: white;
 }
+.ms_btn-orange {
+    background-color: var(--ms-btn-orange);
+    width: 150px;
+    color: white;
+}
+.ms_btn-orange:hover {
+    background-color: #DD4422;
+    width: 150px;
+    color: white;
+}
 .font-3 {
     font-size: 1.1rem;
 
 }
 /* header  */
 .header-top {
-    height: 50px;
+    height: 35px;
 }
 .header-top div {
-    width: 80px;
+    width: 50px;
 }
-
-
+.navbar {
+    height: 65px;
+}
 .full-nav li a::after{
     content: "";
     background-image: url(../img/chevron-down-solid.svg);
@@ -33,4 +67,30 @@ img {
     height: 10px;
     margin-left: 10px;
     
+}
+.full-nav li:hover .text-black {
+    color: var(--ms-link-blue)!important;
+
+}
+.full-nav li:hover a::after {
+    background-image: url(../img/chevron-down-solid-hover.svg);
+} 
+/* Fine header  */
+/* JUMBO */
+.jumbo {
+    margin-top: 100px ;
+}
+/* jumbo top  */
+/* da aggiungere  */
+.jumbo-top {
+    height: 600px;
+
+}
+/* Da aggiungere  */
+.jumbo-top img {
+    height: 100%;
+    object-fit: cover;
+}
+.big-vgame  p {
+    padding: 20px 0;
 }
