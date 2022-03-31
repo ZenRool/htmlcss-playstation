@@ -1,0 +1,36 @@
+/* utility */
+img {
+    width: 100%;
+}
+.ms_btn-dark {
+    background-color: #363636;
+    color: white;
+}
+.ms_btn-dark:hover{
+    background-color: #505050;
+    color: white;
+}
+.font-3 {
+    font-size: 1.1rem;
+
+}
+/* header  */
+.header-top {
+    height: 50px;
+}
+.header-top div {
+    width: 80px;
+}
+
+
+.full-nav li a::after{
+    content: "";
+    background-image: url(../img/chevron-down-solid.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    
+}
