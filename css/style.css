@@ -32,20 +32,36 @@ body {
 .ms_btn-dark {
     background-color: #363636;
     color: white;
+    position: relative;
 }
-.ms_btn-dark:hover{
-    background-color: #505050;
+.ms_btn-dark:hover, .ms_btn-orange:hover {
     color: white;
+}
+.ms_btn-dark:hover::after{
+    content: "";
+    position: absolute;
+    border: 1px solid #363636;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+    border-radius: 50rem;
 }
 .ms_btn-orange {
     background-color: var(--ms-btn-orange);
     width: 150px;
     color: white;
+    position: relative;
 }
-.ms_btn-orange:hover {
-    background-color: #DD4422;
-    width: 150px;
-    color: white;
+.ms_btn-orange:hover::after {
+    content: "";
+    position: absolute;
+    border: 1px solid  var(--ms-btn-orange);
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    top: -5px;
+    left: -5px;
+    border-radius: 50rem;
 }
 .font-3 {
     font-size: 1.1rem;
@@ -120,6 +136,10 @@ body {
     cursor: pointer;
     
     border-radius: 18px;
+
+}
+.jumbo-bottom .pic:hover {
+    bottom: 10px;
 
 }
 .jumbo-bottom img {
