@@ -34,17 +34,17 @@ body {
     color: white;
     position: relative;
 }
-.ms_btn-dark:hover, .ms_btn-orange:hover {
+.ms_btn-dark:hover, .ms_btn-orange:hover, .ms_btn-blue:hover {
     color: white;
 }
 .ms_btn-dark:hover::after{
     content: "";
     position: absolute;
-    border: 1px solid #363636;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    top: -5px;
-    left: -5px;
+    border: 2px solid #363636;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    top: -4px;
+    left: -4px;
     border-radius: 50rem;
 }
 .ms_btn-orange {
@@ -53,19 +53,42 @@ body {
     color: white;
     position: relative;
 }
+.ms_btn-blue {
+    background-color: var(--ms-link-blue);
+    /* width: 150px; */
+    color: white;
+    position: relative;
+}
+.ms_btn-blue:hover::after {
+    content: "";
+    position: absolute;
+    border: 2px solid  var(--ms-link-blue);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    top: -4px;
+    left: -4px;
+    border-radius: 50rem;
+}
 .ms_btn-orange:hover::after {
     content: "";
     position: absolute;
-    border: 1px solid  var(--ms-btn-orange);
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    top: -5px;
-    left: -5px;
+    border: 2px solid  var(--ms-btn-orange);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    top: -4px;
+    left: -4px;
     border-radius: 50rem;
 }
 .font-3 {
     font-size: 1.1rem;
 
+}
+.tm::after {
+    content: "TM";
+    position: absolute;
+    font-size: 0.6rem;
+    font-weight: bold;
+    
 }
 /* header  */
 .header-top {
@@ -174,6 +197,19 @@ body {
     margin: 20px 0;
     font-size: 1.3rem;
 }
+
+.products section {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.products .active, .products section:hover{
+    opacity: 1;
+}
+.products .active {
+    border-bottom: 2px solid #0170d1;
+}
+
+
 
 /* Media */
 
