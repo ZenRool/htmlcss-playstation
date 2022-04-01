@@ -81,11 +81,14 @@ body {
 }
 .font-3 {
     font-size: 1.1rem;
-
+}
+.font-4 {
+    font-size: 1.8rem;
 }
 .tm::after {
     content: "TM";
-    position: absolute;
+    position: relative;
+    bottom: 0.7rem;
     font-size: 0.6rem;
     font-weight: bold;
     
@@ -208,6 +211,10 @@ body {
 }
 .products .active {
     border-bottom: 2px solid #0170d1;
+}
+
+.game-list section {
+    cursor: pointer;
 }
 
 
