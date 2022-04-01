@@ -7,22 +7,25 @@ img {
     width: 100%;
 }
 h2 {
+    font-size: 41px;
+}
+h3 {
     font-size: 40px;
 }
-.container-lg {
-    padding-left: 1rem;
-    padding-right: 1rem;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 .big-vgame {
     color:white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
 
     position: absolute;
     bottom: 0;
-    transform: translate(-50%, 0);
-    left: 50%;
+    transform: translate(0, 0);
+    left: 0;
     padding-bottom: 3rem;
 }
 
@@ -80,6 +83,11 @@ h2 {
 .full-nav li:hover a::after {
     background-image: url(../img/chevron-down-solid-hover.svg);
 } 
+.full-nav .lent img {
+    height: 30px;
+    object-fit: cover;
+
+}
 /* Fine header  */
 /* JUMBO */
 .jumbo {
@@ -88,7 +96,7 @@ h2 {
 /* jumbo top  */
 /* da aggiungere  */
 .jumbo-top {
-    height: 600px;
+    height: 587px;
 
 }
 /* Da aggiungere  */
@@ -101,7 +109,11 @@ h2 {
 }
 .big-vgame img{
     width: 250px;
+    height: auto;
     margin-bottom: 30px;
+}
+.jumbo-bottom {
+    margin: 30px 0;
 }
 .jumbo-bottom .pic {
     position: relative;
@@ -118,18 +130,29 @@ h2 {
 }
 .jumbo-bottom .active .pic::after {
     content: "";
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
 
     position: absolute;
-    top: -5px;
-    left: -5px;
+    top: -4px;
+    left: -4px;
     
     border-radius: 20px;
 
-    border: 3px solid var(--ms-link-blue);
+    border: 2px solid var(--ms-link-blue);
 
 
+}
+
+/* main  */
+.center-title a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 550;
+}
+.center-title p{
+    margin-top: 20px;
+    font-size: 1.35rem;
 }
 
 /* Media */
@@ -137,8 +160,6 @@ h2 {
 
 /* lg  */
 @media all and (min-width: 992px) {
-    .big-vgame {
-        padding-right: 50%;
-    }
+
     
 }

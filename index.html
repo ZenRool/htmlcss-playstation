@@ -17,22 +17,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- HEADER  -->
     <header class="fixed-top">
         <div class="header-top bg-black d-flex flex-row-reverse align-items-center">
             <div>
                 <img src="img/sony_logo.svg" alt="Logo sony">
             </div>
         </div>
-        <!-- header bottom -->
+        <!-- Nav  -->
         <nav class="navbar  navbar-expand-lg navbar-light bg-white p-2">
             <a class="navbar-brand" href="#">
               <img src="img/play_logo.svg">
             </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
            
             <div  class="full-nav collapse navbar-collapse justify-content-between font-3" id="navbarText">
 
@@ -67,8 +67,9 @@
                         </div>
                     </li>
                     <li class="nav-item mx-1">
-                        <div class="nav-link text-black">  
-                          <i class="fas fa-search"></i>
+                        <div class="nav-link text-black lent">  
+
+                          <img src="img/lens.svg" alt="lente">
                         </div>
                     </li>
                 </ul>
@@ -79,26 +80,35 @@
         </nav>
 
     </header>
+    <!-- jumbo  -->
     <div class="jumbo">
+        <!-- sopra grande  -->
         <div class="jumbo-top position-relative">
             <img src="img/jumbo-bg.png" alt="Returnal">
             
-            <div class="container-lg big-vgame">
-                <img src="img/returnal-hero-banner-logo.png" alt="banner">
-                <h2>
-                    Rompi il cerchio
-                </h2>
-                <p>
-                    Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in queto esplosivo thiller fantascientifico, disponiblile in esclusiva su PS5.
-                </p>
-                <button type="button" class="btn  ms_btn-orange rounded-pill">
-                    Aquista ora
-                </button>
+            <div class="container px-5 px-sm-0">
+                <div class="row">
+                    <div class="col-12 col-lg-4  position-relative">
+                        <div class="big-vgame">
+                            <img src="img/returnal-hero-banner-logo.png" alt="banner">
+                            <h3>
+                                Rompi il cerchio
+                            </h3>
+                            <p>
+                                Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni rinascita in queto esplosivo thiller fantascientifico, disponiblile in esclusiva su PS5.
+                            </p>
+                            <button type="button" class="btn  ms_btn-orange rounded-pill">
+                                Aquista ora
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
+        <!-- sotto griglia -->
         <div class="jumbo-bottom">
-            <div class="container-lg py-4">
+            <div class="container">
                 <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-4">
                     <section class="active">
                         <div class="pic">                        
@@ -130,14 +140,26 @@
                             <img src="img/ratchet-and-clank-rift-apart-keyart.jpg" alt="retchet and clank">
                         </div>
                     </section>
-
-
-
-
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Main  -->
+    <main>
+        <div class="container px-5 px-sm-0 py-4 d-flex flex-column align-items-center center-title">
+            <a class="text-uppercase" href="#">
+                Play has no limits
+            </a>
+            <h2>
+                Ecco la Playstation 5
+            </h2>
+            <p>
+                Tuffati in nuove modalità di gioco completamente inaspettate
+            </p>
+
+        </div>
+    </main>
     
 </body>
 </html>
