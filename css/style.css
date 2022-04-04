@@ -170,7 +170,12 @@ body {
 .navbar {
     height: 65px;
 }
-.full-nav li a::after{
+.navbar .dropdown-toggle::after {
+    content: "";
+    display: none;    
+}
+
+nav li .ms_dropdown-toggle::after{
     content: "";
     background-image: url(../img/chevron-down-solid.svg);
     background-repeat: no-repeat;
@@ -179,18 +184,22 @@ body {
     width: 10px;
     height: 10px;
     margin-left: 10px;
-    
 }
-.full-nav li:hover .text-black {
+nav li .dropdown-toggle:focus .ms_dropdown-toggle:after{
+    
+    transform: rotate(180deg);
+
+}
+nav li:hover .text-black {
     color: var(--ms-link-blue)!important;
 
 }
-.full-nav li:hover a::after {
+nav li:hover .ms_dropdown-toggle::after {
     background-image: url(../img/chevron-down-solid-hover.svg);
 } 
-.full-nav .lent img {
+nav .lent img {
     height: 30px;
-    object-fit: cover;
+    
 
 }
 /* Fine header  */
