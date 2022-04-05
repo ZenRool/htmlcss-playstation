@@ -169,6 +169,7 @@ body {
 }
 .navbar {
     height: 65px;
+
 }
 .navbar .dropdown-toggle::after {
     content: "";
@@ -184,10 +185,11 @@ nav li .ms_dropdown-toggle::after{
     width: 10px;
     height: 10px;
     margin-left: 10px;
+    transition: 0.4s ;
 }
 nav li .dropdown-toggle:focus .ms_dropdown-toggle:after{
     
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
 
 }
 nav li:hover .text-black {
@@ -202,13 +204,24 @@ nav .lent img {
     
 
 }
-.dropdown-menu {
-    /* position: fixed !important; */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    border: none;
+.dropdown {
+    position:static !important;
 }
+.dropdown-menu {
+    /* non so come si fa questa parte  */
+    width: 100vw;
+    
+    border: none;
+    border-radius: 0;
+    
+    margin-top:0px !important;
+    overflow: hidden;
+    transition: all 10s;
+    padding: 0;
+    
+}
+
+
 
 /* Fine header  */
 /* JUMBO */
